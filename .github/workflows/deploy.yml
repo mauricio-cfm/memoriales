@@ -1,0 +1,28 @@
+name: Deploy WordPress Memoriales por SSH
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Despliegue remoto por SSH
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Conectar al servidor y desplegar
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: desarrollo
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /opt/lampp/htdocs/memoriales
+            git reset --hard
+            git pull origin main
+            echo "Despliegue completado en memoriales"
