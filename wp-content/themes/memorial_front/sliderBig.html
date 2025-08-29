@@ -1,0 +1,241 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="ff/stylesheet.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-v1.8.3.js"></script>
+<script src="js/slides.min.jquery.js"></script>
+ <script>
+		$(function(){
+			$('#slidesBig').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 1500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+</script>
+
+
+
+<title></title>   	
+
+ <!--[if lt IE 9]>
+<script type="text/javascript">
+   document.createElement("nav");
+   document.createElement("header");
+   document.createElement("footer");
+   document.createElement("section");
+   document.createElement("article");
+   document.createElement("aside");
+   document.createElement("hgroup");
+</script>
+<![endif]-->
+    
+<style type="text/css">
+
+
+/*
+	Slideshow
+*/
+
+#slidesBig {
+	position:absolute;
+	z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:970px;
+	height: 380px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container div.slide {
+	width:970px;
+	height: 380px;
+	display:block;
+}
+
+
+/*
+	Next/prev buttons
+*/
+
+#slidesBig .next,#slidesBig .prev {
+	position:absolute;
+	top:107px;
+	left:-24px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slidesBig .next {
+	left:720px;
+}
+
+/*
+	Pagination
+*/
+
+#slidesBig .pagination {
+    bottom: 50px;
+    left: 165px;
+    position: absolute;
+    width: 100px;
+    z-index: 9999;
+}
+
+#slidesBig .pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+ #slidesBig .pagination li a {
+	display:block;
+	width:20px;
+	height:20px;
+	text-align: center;
+	line-height: 20px;
+	font-weight: bold;
+	font-size: 12px;
+	background:url(images/bullet.png) 0px 0px no-repeat;
+	float:left;
+	color: #fff;
+	margin: 0 5px 0 5px;
+
+	overflow:hidden;
+}
+
+#slidesBig .pagination li.current a {
+	background:url(images/bullet.png) 0px -21px no-repeat;
+	color: #069548;
+}
+
+/*
+	Caption
+*/
+
+#slidesBig .slides_container .slide .caption {
+	z-index:500;
+	position:absolute;
+	top:35px;
+	left:35px;
+	height:270px;
+	padding:5px 20px 0 20px;
+	width:310px;
+	color:#fff;
+	text-shadow:none;
+	padding: 20px;
+}
+
+#slidesBig .slides_container .slide .caption p {
+	font-size: 12px;
+	font-weight: lighter;
+	line-height: 16px;
+}
+
+#slidesBig .slides_container .slide .caption .strong {
+	font-size: 16px;
+	font-weight:bold;
+	line-height: 19px;
+	margin: 10px 0;
+}
+
+#slidesBig .slides_container .slide .caption h3 {
+	font-size: 28px;
+	font-weight:bold;
+	line-height: 33px;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<!---------------------- AQUI COMIENZA EL SLIDER ---------------->   
+<section id="slidesBig">
+	<div class="slides_container">
+
+		<div class="slide">
+			<img src="http://upload.wikimedia.org/wikipedia/commons/f/f2/Brigadista_Conaf.jpg"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+			<div class="caption bgDarkGreen">
+			<h3>Incendios Forestales</h3>
+			<p class="strong">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat somper commodo integer eleigent tortos tiniums adipsing elit dolor trajen suler faler</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat semper commodo. Integer eleifend, tortor in iaculis faucibus, arcu dui dapibus arcu, ut pellentesque dolor nisl a arcu. Aenean quis enim ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat semper commodo. Integer eleifend, tortor in iaculis faucibus, arcu dui dapibus arcu, ut pellentesque dolor nisl a arcu.</p>
+			</div>
+		</div>
+
+		<div class="slide">
+			<img src="http://upload.wikimedia.org/wikipedia/commons/f/f2/Brigadista_Conaf.jpg"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+			<div class="caption bgDarkGreen">
+			<h3>Incendios Forestales</h3>
+			<p class="strong">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat somper commodo integer eleigent tortos tiniums adipsing elit dolor trajen suler faler</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat semper commodo. Integer eleifend, tortor in iaculis faucibus, arcu dui dapibus arcu, ut pellentesque dolor nisl a arcu. Aenean quis enim ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat semper commodo. Integer eleifend, tortor in iaculis faucibus, arcu dui dapibus arcu, ut pellentesque dolor nisl a arcu.</p>
+			</div>
+		</div>
+
+		<div class="slide">
+			<img src="http://upload.wikimedia.org/wikipedia/commons/f/f2/Brigadista_Conaf.jpg"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+			<div class="caption bgDarkGreen">
+			<h3>Incendios Forestales</h3>
+			<p class="strong">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat somper commodo integer eleigent tortos tiniums adipsing elit dolor trajen suler faler</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat semper commodo. Integer eleifend, tortor in iaculis faucibus, arcu dui dapibus arcu, ut pellentesque dolor nisl a arcu. Aenean quis enim ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat semper commodo. Integer eleifend, tortor in iaculis faucibus, arcu dui dapibus arcu, ut pellentesque dolor nisl a arcu.</p>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+</body>
+</html>

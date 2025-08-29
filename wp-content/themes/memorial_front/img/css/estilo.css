@@ -1,0 +1,687 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+#wpadminbar{
+	display:none;
+	}
+
+.wrapper{
+	margin:0 auto;
+	width:940px;
+	}
+	
+.contenedor-grande{
+	margin:0 auto;
+	width:950px;
+	}
+	
+p {
+    color: #333333;
+    font-size: 13px;
+    line-height: 20px;
+	}
+	
+h5 /*linea color*/ {
+    background-image: url("http://www.aprendeusable.com/img/linea-color.jpg");
+    display: block;
+    height: 4px;
+    width: 100%;
+}
+
+.padding-top-10{
+	padding-top:10px !important;
+	}
+	
+.padding-top-15{
+	padding-top:15px !important;
+	}
+	
+.padding-top-25{
+	padding-top:25px !important;
+	}
+	
+.padding-bottom-15{
+	padding-bottom:15px !important;
+	}
+	
+.margin-bottom-30{
+	margin-bottom:30px !important;
+	}
+	
+.margin-bottom-10{
+	margin-bottom:10px !important;
+	}
+	
+.margin-bottom-5{
+	margin-bottom:5px !important;
+	}
+	
+.margin-top-30{
+	margin-top:30px !important;
+	}
+	
+.margin-left-10{
+	margin-left:10px !important;
+	}
+	
+.margin-right-10{
+	margin-right:10px !important;
+	}
+	
+.margin-left-5{
+	margin-left:5px !important;
+	}
+	
+.margin-right-5{
+	margin-right:5px !important;
+	}
+	
+.padding-bottom-10{
+	padding-bottom:10px !important;
+	}
+
+.limpia{
+	clear:both;
+	}
+	
+.pink{
+	color:#FE008D !important;
+	}
+	
+.seleccion{
+	border-bottom: 3px solid #F06;
+	}
+
+.border-bottom{
+	border-bottom:1px solid #999;
+	}
+	
+.border-bottom-bold{
+	border-bottom:3px solid #333;
+	}
+
+.float-left{
+	float:left;
+	}
+	
+.float-right{
+	float:left;
+	}
+	
+.top{
+	height:40px;
+	background-image:url(../img/top.png);
+	background-repeat:no-repeat;
+	background-position:0 12px;
+	}
+	
+.logo {
+    background-image: url("../img/logo-memoria-audiovisual.png");
+    background-position: 0 15px;
+    background-repeat: no-repeat;
+    height: 156px;
+	}
+	
+/******* nav */
+
+			
+ul.nav-general {
+    border-bottom: 1px solid #999999;
+    border-top: 1px solid #999999;
+    margin: 0 0 15px;
+    padding: 0;
+	}
+
+.redes-sociales {
+   float:right;
+	}
+	
+.redes-sociales li{
+	float:left;
+	width:22px;
+	height:22px;
+	display:block;
+	margin-left:5px;
+	margin-top:4px;
+	background-image: url("../img/sprite-redes.png");
+	}
+	
+.redes-sociales li.facebook{
+	background-position:0 0;
+	}
+	
+.redes-sociales li.facebook:hover{
+	background-position:0 22px;
+	}
+	
+.redes-sociales li.vimeo{
+	background-position:-22px 0;
+	}
+	
+.redes-sociales li.vimeo:hover{
+	background-position:-22px 22px;
+	}
+	
+.redes-sociales li.twitter{
+	background-position:-44px 0;
+	}
+	
+.redes-sociales li.twitter:hover{
+	background-position:-44px 22px;
+	}
+
+.nav-general li{
+	float:left;
+	list-style:none;
+	font-family: 'Abel', sans-serif;
+	}
+	
+.nav-general li a:link, .nav-general li a:visited {
+    color: #666666;
+    font-size: 18px;
+    margin-right: 20px;
+	line-height:30px
+	} 
+
+.nav-general li a:hover {
+    border-bottom: 3px solid #F06;
+	text-decoration:none;
+	}  
+
+/********************* contenedor home */ 
+
+/******* col-left */ 
+
+.home .col-left{
+	width:628px;
+	float:left;
+	}
+	
+.destacado{
+	width:628px;
+	height:240px;
+	}
+	
+.texto-destacado {
+    background-color: #333333;
+    float: left;
+    height: 210px;
+    padding: 10px 20px 20px;
+    width: 240px;
+}
+	
+h2 {
+    color:#0F3 !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    line-height: 25px !important;
+	margin-bottom:5px !important;
+	margin-top:10px !important;
+	}
+
+h2 a:link, h2 a:visited {
+    color:#0F3 !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    line-height: 25px !important;
+	margin-bottom:5px !important;
+	margin-top:10px !important;
+	}
+	
+h2 a:hover {
+	text-decoration:underline;
+	}
+
+.texto-destacado p{
+	color:#FFF;
+	font-size:14px;
+	}
+	
+.imagen-destacado{
+	width:348px;
+	height:240px;
+	float:right;
+	background-color:#666;
+	}
+	
+.imagen-destacado img{
+	height:240px !important;
+	width:auto !important;
+	}
+
+h3{
+	font-size:20px !important;
+	font-weight:bold !important;
+	margin-bottom:10px !important;
+	}
+
+.actividades-home{
+	width:340px;
+	float:left;
+	margin-top:15px;
+	}
+	
+.actividades-home ul{
+	margin:0;
+	padding:0;
+	}
+	
+.pastilla-actividades{
+	margin-top:15px;
+	list-style:none;
+	border-bottom:1px solid #333;
+	padding-bottom:15px;
+	}
+
+.foto-actividades{
+	width:80px;
+	height:80px;
+	background-color:#ebebeb;
+	display:block;
+	float:left;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	border-radius: 80px;
+	overflow:hidden;
+	}
+	
+.foto-actividades img{
+	height:80px !important;
+	width:auto;
+	}
+
+.texto-actividades{
+	width:245px;
+	float:right;
+	}
+	
+h4{
+	font-weight:bold;
+	font-size:18px;
+	line-height:22px;
+	color:#333;
+	}
+	
+h4 a:link, h4 a:visited{
+	font-weight:bold;
+	font-size:18px;
+	line-height:22px;
+	color:#333;
+	}
+	
+h4 a:hover{
+	text-decoration:underline;
+	}
+	
+.fecha{
+	font-size:11px;
+	font-style:italic;
+	}
+	
+h6{
+	width:100%;
+	text-align:center;
+	border-top:2px solid #333;
+	border-bottom:3px solid #333;
+	font-size:14px;
+	line-height:25px;
+	}	
+	
+h6 a:link, h6 a:visited{
+	color:#333;
+	font-weight:bold;
+	}
+	
+h6 a:hover{
+	color:#f06;
+	font-weight:bold;
+	}		
+	
+.noticias-home{
+	width:250px;
+	float:right;
+	margin-top:15px;
+	}	
+	
+.pastilla-noticias{
+	margin-top:15px;
+	list-style:none;
+	border-bottom:1px solid #333;
+	padding-bottom:15px;
+	}
+
+.noticias-home ul{
+	margin:0;
+	padding:0;
+	}
+
+li.pastilla-noticias{
+	list-style:none;
+	}
+	
+li.pastilla-noticias a:link, li.pastilla-noticias a:visited{
+	color:#333;
+	}
+	
+li.pastilla-noticias a:hover{
+	text-decoration:underline;
+	}
+	
+/******* col-right */
+
+.home .col-right{
+	width:292px;
+	float:right;
+	}
+	
+.pastilla-sidebar{
+	width:100%;
+	height:80px;
+	display:block;
+	margin-bottom:10px;
+	}
+	
+.pastilla-sidebar p{
+	color:#FFF;
+	font-size:18px;
+	margin-left:65px;
+	padding-top:22px;
+	line-height:20px;
+	}
+
+.pastilla-programacion{
+	background-color:#424242;
+	background-image: url("../img/calendario.png");
+	background-repeat:no-repeat;
+	background-position:15px 15px;
+	}
+	
+.pastilla-competencia{
+	background-color:#fe008d;
+	background-image: url("../img/descarga.png");
+	background-repeat:no-repeat;
+	background-position:15px 15px;
+	}
+	
+.facebook-box{
+	margin-top:15px;
+	}
+	
+	
+.twitter-box{
+	margin-bottom:10px;
+	}	
+	
+.twtr-ft{
+	display:none !important;
+	}
+.twtr-hd {
+    display: none !important;
+	}
+	
+/********************* footer */ 
+
+.pastilla-footer{
+	width:100%;
+	height:30px;
+	background-color:#999;
+	float:left;
+	}
+	
+.pie{
+	border-top:1px solid #333;
+	padding-top:15px;
+	margin-top:30px;
+	}
+	
+/********************* actividades */ 
+
+
+ul.pastilla-grande{
+	margin:0;
+	padding:0;
+	}
+	
+ul.pastilla-grande .foto-actividades {
+    background-color: #ebebeb;
+    border-radius: 80px 80px 80px 80px;
+    display: block;
+    float: left;
+    height: 100px;
+    overflow: hidden;
+    width: 100px;
+	}
+	
+ul.pastilla-grande .foto-actividades img{
+    height: 100px !important;
+    width: auto !important;
+	}
+
+ul.pastilla-grande .texto-actividades {
+    float: right;
+    width: 500px;
+	}
+	
+/********************* single */ 
+
+.fecha-single {
+    position: relative;
+    top: -5px;
+	}
+	
+.fecha-actividad{
+	font-size:13px !important;
+	}
+
+.foto-single{
+	width:100%;
+	height:260px;
+	margin-bottom:15px;
+	display:block;
+	background-color:#CCC;
+	overflow:hidden;
+	}
+	
+.single p{
+	margin-bottom:15px;
+	}
+	
+.single p {
+    color: #333333;
+    font-size: 13px;
+    line-height: 23px;
+	}
+	
+.content-single ul{
+    margin:0;
+	padding:0 0 0 15px !important;
+	font-size:13px !important;
+	}
+	
+.single-bottom-bar{
+	border-top:1px solid #999;
+	width:100%;
+	display:block;
+	height:40px;
+	}
+
+.single-bottom-bar ul{
+	margin:7px 0 0 0;
+	padding:0;
+	float:left;
+	}
+	
+.single-bottom-bar li {
+    float: left;
+    font-size: 14px;
+    list-style: none outside none;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+	
+.single-bottom-bar li a:link, .single-bottom-bar li a:visited{
+	color:#333;
+	}
+	
+.single-bottom-bar li a:hover{
+	text-decoration:underline;
+	}
+	
+/********************* single-pelicula */ 
+.foto-super-grande{
+	width:100%;
+	height:300px;
+	display:block;
+	overflow:hidden;
+	position:relative;
+	margin-bottom:15px;
+	}
+	
+.foto-super-grande img{
+	z-index:-1;
+	position:absolute;
+	left:0;
+	width:940px !important;
+	height:auto;
+	top:0;
+	}
+	
+font{
+	font-size:22px;
+	font-weight:bold;
+	padding:30px 25px 15px 0;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-radius-bottomright: 15px;
+	border-bottom-right-radius: 15px;	
+	}
+
+.super-foto{
+	position:absolute;
+	left:0;
+	top:0;
+	}
+
+h3.super-foto font{
+	background-color:#FFF;
+	}
+	
+.puntos{
+	width:100%;
+	height:300px;
+	display:block;
+	background-image:url(../img/puntos.gif);
+	z-index:3;
+	}
+
+.pastilla-lugar-single{
+	padding:10px 0;
+	font-size:14px;
+	}
+	
+.pastilla-lugar-single ul{
+	margin:0 !important;
+	padding:0 0 0 15px !important;
+	}
+	
+.pastilla-lugar-single li{
+	margin:0 !important;
+	padding-bottom:10px !important;
+	}
+	
+.pastilla-lugar-single strong{
+	color:#FE008D !important;
+	}
+	
+
+/********************* competencia */
+
+ul.peliculas-competencia{
+	margin:0;
+	padding:0;
+	}
+
+.pastilla-pelicula-competencia{
+	width:199px;
+	height:120px;
+	display:block;
+	margin:5px;
+	overflow:hidden;
+	float:left;
+	background-color:#CCC;
+	} 
+	
+.col-left ul{
+	margin:0;
+	padding:0;
+	}
+	
+#myTab a{
+	font-size:13px !important;
+	color:#FE008D;
+	}
+	
+.active a{
+	color:#666 !important;
+	}
+	
+.separa{
+	width:100%;
+	height:1px;
+	display:block;
+	}
+	
+ul.movie .foto-actividades {
+    background-color: #EBEBEB;
+    border-radius: 80px 80px 80px 80px;
+    display: block;
+    float: left;
+    height: 100px !important;
+    overflow: hidden;
+    width: 100px !important;
+}
+
+ul.movie .texto-actividades {
+    width: 500px !important;
+}
+
+ul.movie .foto-actividades img {
+    height: 100px !important;
+    width: 100 !important;
+}
+	
+
+/******* para compartir en fb y twitter */
+	
+.compartir{
+	float:right;
+	margin-top:8px;
+	}
+
+.addthis_button_facebook_like iframe{
+	width:110px !important;
+	}
+	
+.addthis_button_tweet iframe{
+	width:74px !important;
+	}
+	

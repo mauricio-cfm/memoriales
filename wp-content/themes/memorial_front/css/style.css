@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, img, figure {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display: block;
+}
+
+body{
+	font-family: 'gobclregular';
+}
+
+.colorDarkGreen{
+	color:#069548;
+}
+
+.colorGreen{
+	color:#8dc541;
+}
+
+.colorTurq{
+	color:#01a69d;
+}
+
+.colorYellow{
+	color:#f8ec31;
+}
+
+.bgDarkGreen{
+	background-color:#069548;
+}
+
+.bgGreen{
+	background-color:#8dc541;
+}
+
+.bgTurq{
+	background-color:#01a69d;
+}
+
+.bgYellow{
+	background-color:#f8ec31;
+}
+
+/* box */
+
+.box{
+	width: 300px;
+	margin: 10px;
+	display: inline-block;
+	vertical-align: top;
+	*display: inline;
+	zoom:1;
+	color:#999999;
+}
+
+.box figure{
+	margin: 0 auto 10px;
+	padding: 0;
+	width: 100%;
+}
+
+.box figure img{
+	width: 100%;
+}
+
+.box .date{
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.box h2{
+	font-size: 16px;
+	font-weight:bold;
+	line-height: 16px;
+	margin: 5px 0 10px 0;
+}
+
+.box p{
+	font-size: 13px;
+	line-height: 14px;
+}
+
+.box .vermas{
+	font-size: 12px;
+	height: 16px;
+	background:#C3B69C;
+	color:#fff;
+	font-weight: bold;
+	padding: 5px 0 5px 10px;
+	width: 80px;
+	line-height: 19px;
+	text-transform: uppercase;
+	margin: 10px 0;
+	position: relative;
+}
+
+.box .vermas:hover{
+	opacity: 0.8;
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all 0.3s linear;
+	-ms-transition:all 0.3s linear;
+	transition:all 0.3s linear;
+	
+}
+.box .vermas span{
+	font-size: 12px;
+	height: 16px;
+	line-height: 16px;
+	color:#fff;
+	font-weight: bold;
+	padding: 5px 10px;
+	margin: -5px 0 0 11px;
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: top;
+	*display: inline;
+	zoom:1;
+	top: 5px;
+	position: absolute;
+	right: -5;
+
+}
+

@@ -1,0 +1,258 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title></title>   	
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="ff/stylesheet.css">
+
+ <!--[if lt IE 9]>
+<script type="text/javascript">
+   document.createElement("nav");
+   document.createElement("header");
+   document.createElement("footer");
+   document.createElement("section");
+   document.createElement("article");
+   document.createElement("aside");
+   document.createElement("hgroup");
+</script>
+<![endif]-->
+    
+<style type="text/css">
+.clear {clear: both;}
+.left {float: left;}
+.right {float: right;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.hide {display: none !important;}
+
+ul li ul, ul li ol {margin-bottom: 0;}
+ul, ol, dl {font-size: 14px; line-height: 1.6; margin-bottom: 17px; list-style: none;}
+ul li a {text-decoration: none;}
+ul li a:hover {text-decoration: underline;}
+
+header {width: 100%; display: block; border: 0;}
+header .wrapper {width: 970px; margin: 0 auto; display: block;}
+header ul li a {text-transform: uppercase;}
+
+header .left {width: 340px;}
+header .right {width: 600px;}
+header .bottom {width: 970px; float: left; display: block;}
+
+header .left figure {height: 150px; margin: 0; float: left; display: block; background-color: #CCC;}
+header .left figure:last-child {float: right;}
+
+header .right ul {float: right; display: block;}
+header .right .topNav ul {height: 30px; padding: 0 5px; border-radius: 0 0 4px 4px; background-color: #DBD7CD;}
+header .right .topNav ul li {font-size: 9px; float: left;}
+header .right .topNav ul li a {font-size: 10px; color: #343C25; line-height: 30px; border-right: 1px solid #343C25; padding: 0 7px;}
+header .right .topNav ul li:nth-of-type(6) a {border-right: none;}
+
+header .right .socialNav ul li {width: 16px; height: 16px; float: left; margin-left: 5px;}
+header .right .socialNav ul li a {width: 100%; height: 100%; display: block;}
+header .right .socialNav ul li.iconFacebook a {background: url("images/sprite_social.png") no-repeat scroll 0 0 transparent;}
+header .right .socialNav ul li.iconFlickr a {background: url("images/sprite_social.png") no-repeat scroll -21px 0 transparent;}
+header .right .socialNav ul li.iconTwitter a {background: url("images/sprite_social.png") no-repeat scroll -42px 0 transparent;}
+header .right .socialNav ul li.iconYoutube a {background: url("images/sprite_social.png") no-repeat scroll -63px 0 transparent;}
+
+
+header .right .search {width: 200px; padding: 5px 10px; float: right; border: 1px solid #F4F4F4; border-radius: 5px; box-shadow: 0 0 4px #EFEFEF inset;}
+header .right .search input.text {text-transform: capitalize; width: 150px; padding: 6px 0; float: left; display: inline-block; border: none;}
+header .right .search button.button {width: 25px; height: 25px; float: right; display: block; border: none; background: url("images/search.png") no-repeat scroll 0 0 transparent;}
+
+
+/* Navigation */
+header .bottom .mainNav {
+	font-size: 0.7em; 
+	text-align: left;
+	width: 970px; 
+	margin: 20px auto;
+}
+
+header .bottom .mainNav ul {
+	width: 100%;
+    list-style-type: none;
+    background-color: #67655e;
+}
+
+header .bottom .mainNav ul li.level1 {
+    float: left;
+}
+
+header .bottom .mainNav ul li.level1:first-child a {padding: 8px 20px;}
+header .bottom .mainNav ul li.level1 + li.level1 + li.level1 + li.level1  + li.level1 + li.level1 + li.level1 a {padding: 8px 22px 8px 21px;}
+
+
+header .bottom .mainNav ul li a {
+    color: #DAD7CD;
+    text-decoration: none;
+    padding: 8px 18px;
+    display: block;
+    border: 1px solid #454343;
+    position: relative;
+    background-color: #67655E;
+}
+header .bottom .mainNav ul li:hover {
+    position: relative;
+}
+header .bottom .mainNav ul li a:hover, header .bottom .mainNav ul li:hover a.level1 {
+    color: #FFFFFF;
+    position: relative;
+}
+header .bottom  ul li a.level1 {
+    display: block !important;
+    position: relative;
+}
+header .bottom  ul li ul {
+    display: none;
+}
+header .bottom  ul li a:hover ul, header .bottom .mainNav ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+}
+header .bottom .mainNav ul li ul li a {
+	text-transform: inherit;
+    width: 135px;
+    padding: 6px 0 8px 20px;
+    border: none;
+}
+header .bottom .mainNav ul li ul li a:hover {
+	color: #FFFFFF;
+    border-top-color: #000000;
+    position: relative;
+}
+
+header .bottom .mainNav ul li a.navActive {
+	color: #333333;
+	height: 24px;
+	border: none;
+	background: #f4f4f4; /* Old browsers */
+	background: -moz-linear-gradient(top, #f4f4f4 0%, #d8d7d7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(100%,#d8d7d7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f4f4f4 0%,#d8d7d7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f4f4f4 0%,#d8d7d7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f4f4f4 0%,#d8d7d7 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f4f4f4 0%,#d8d7d7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#d8d7d7',GradientType=0 ); /* IE6-9 */
+}
+header .bottom .mainNav ul li a.navActive:hover {
+	color: #333333;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+	<div class="wrapper">
+		<section class="left">
+			<figure><img src="images/logo_min-agricultura.png" alt="Ministerio de Agricultura" /></figure>
+			<figure><img src="images/logo_conaf.png" alt="CONAF" /></figure>
+		</section><!-- /.left -->
+		
+		<section class="right">
+			<nav class="topNav">
+				<ul>
+					<li><a href="#">Quienes Somos</a></li>
+					<li><a href="#">Servicios en Línea</a></li>
+					<li><a href="#">Centro de Documentación</a></li>
+					<li><a href="#">Trámites Conaf</a></li>
+					<li><a href="#">Preguntas Frecuentes</a></li>
+					<li><a href="#">Contacto</a></li>
+					<br class="clear" />
+				</ul>
+			</nav><!-- /.topNav -->
+			
+			<br class="clear" />
+			
+			<nav class="socialNav">
+				<ul>
+					<li class="iconFacebook"><a href="#" alt="Facebook"></a></li>
+					<li class="iconFlickr"><a href="#" alt="Flickr"></a></li>
+					<li class="iconTwitter"><a href="#" alt="Twitter"></a></li>
+					<li class="iconYoutube"><a href="#" alt="YouTube"></a></li>
+				</ul>
+			</nav><!-- /.socialNav -->
+			
+			<br class="clear" />
+			
+			<div class="search">
+				<form>
+					<input class="text" type="text" value="search" alt="" placeholder="Buscar…" />
+					<button class="button" type="button"></button>
+				</form>
+			</div><!-- /.search -->
+		</section><!-- /.right -->
+		
+		<section class="bottom">
+			<nav class="mainNav">
+				<ul>
+					<li class="level1">
+						<a class="level1 navActive" href="#">Inicio</a>
+					</li><!-- /.level1 -->
+					
+					<li class="level1">
+						<a class="level1" href="#">Nuestros Bosques</a>
+						<ul>
+							<li>
+								<a href="#">Element 1</a>
+							</li>
+							<li>
+								<a href="#">Element 2</a>
+							</li>
+							<li>
+								<a href="#">Element 3</a>
+							</li>
+							<li>
+								<a href="#">Element 4</a>
+							</li>
+							<li>
+								<a href="#">Element 5</a>
+							</li>
+							<li>
+								<a href="#">Element 5</a>
+							</li>
+						</ul>
+					</li><!-- /.level1 -->
+					
+					<li class="level1">
+						<a class="level1" href="#">Parques Nacionales</a>
+					</li><!-- /.level1 -->
+					
+					<li class="level1">
+						<a class="level1" href="#">Incendios Forestales</a>
+					</li><!-- /.level1 -->
+					
+					<li class="level1">
+						<a class="level1" href="#">Conaf en Regiones</a>
+					</li><!-- /.level1 -->
+					
+					<li class="level1">
+						<a class="level1" href="#">Forestín Educa</a>
+					</li><!-- /.level1 -->
+					
+					<li class="level1">
+						<a class="level1" href="#">Noticias</a>
+					</li><!-- /.level1 -->
+					<br class="clear" />
+				</ul>
+			</nav><!-- /.mainNav -->
+		</section><!-- /.bottom -->
+	</div>	
+</header>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

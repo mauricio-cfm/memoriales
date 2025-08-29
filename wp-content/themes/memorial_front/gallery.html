@@ -1,0 +1,479 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="ff/stylesheet.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-v1.8.3.js"></script>
+<script src="js/slides.min.jquery.js"></script>
+ <script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+
+		$(function(){
+			$('#slidesDos').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+
+		$(function(){
+			$('#slidesTres').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+        
+<script>
+
+$(document).ready(function(){
+
+  $(".slidesUnoAct").click(function(){
+  	var eli = $(this).attr('alt');
+    $(".eliSlide").css('display','none')
+    $('#slides').css('display','block');
+    $('li').removeClass('selectedGallery');
+    $(this).addClass('selectedGallery');
+     $('.btnUno').css('background-position','3px 0px ');
+  }); 
+  
+  $(".slidesDosAct").click(function(){
+  	var eli = $(this).attr('alt');
+    $(".eliSlide").css('display','none');
+    $('#slidesDos').css('display','block');
+    $('li').removeClass('selectedGallery');
+    $(this).addClass('selectedGallery');
+    $('.btnDos').css('background-position','-59px 0px ');
+ 
+  }); 
+  
+  $(".slidesTresAct").click(function(){
+  	var eli = $(this).attr('alt');
+    $(".eliSlide").css('display','none');
+    $('#slidesTres').css('display','block');
+    $('li').removeClass('selectedGallery');
+    $(this).addClass('selectedGallery');
+    $('.btnTres').css('background-position','-120px 2px ');
+
+  }); 
+});
+</script>  
+
+
+
+
+<title></title>   	
+
+ <!--[if lt IE 9]>
+<script type="text/javascript">
+   document.createElement("nav");
+   document.createElement("header");
+   document.createElement("footer");
+   document.createElement("section");
+   document.createElement("article");
+   document.createElement("aside");
+   document.createElement("hgroup");
+</script>
+<![endif]-->
+    
+<style type="text/css">
+
+.gallery {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	*display: inline;
+	zoom:1;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.gallery ul {
+	margin: 0 auto;
+	width: 100%;
+
+
+}
+
+
+.gallery ul li{
+	display: inline-block;
+	vertical-align: top;
+	*display: inline;
+	zoom:1;
+	background: none repeat scroll 0 0 #F6F4F0;
+    height: 80px;
+    margin: -2px;
+    padding: 0;
+    width: 101px;
+
+}
+
+
+.gallery ul li:hover{
+	opacity: 0.6;
+	-moz-transition:all 0.3s linear;
+	-webkit-transition:all 0.3s linear;
+	-ms-transition:all 0.3s linear;
+	transition:all 0.3s linear;
+	
+}
+
+.btnUno{
+	width: 63px;
+	height: 63px;
+	margin: 10px 17px;
+	background: url('images/spriteIcon.png') 3px -62px  no-repeat;
+}
+
+.btnUno:hover{
+	
+	background: url('images/spriteIcon.png') 3px -62px  no-repeat;
+}
+
+.btnDos{
+	width: 61px;
+	height: 63px;
+	margin: 10px 17px;
+	background: url('images/spriteIcon.png') -59px -62px  no-repeat;
+}
+
+.btnDos:hover{
+	
+	background: url('images/spriteIcon.png') -59px -62px  no-repeat;
+}
+
+.btnTres{
+	width: 63px;
+	height: 63px;
+	margin: 10px 17px;
+	background: url('images/spriteIcon.png') -120px -60px no-repeat;
+}
+
+.btnTres:hover{
+	
+	background: url('images/spriteIcon.png') -120px -60px  no-repeat;
+}
+
+.selectedGallery{
+	background:#069548 !important;
+}
+
+
+
+/*
+	Slideshow
+*/
+
+.gallery #slides {
+	position:absolute;
+	z-index:100;
+}
+
+
+.gallery .slides_container {
+	width:300px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+
+.gallery .slides_container img {
+	width:300px;
+}
+
+
+.gallery .slides_container div.slide {
+	width:300px;
+	height:200px;
+	display:block;
+}
+
+.gallery #slides .next,#slides .prev {
+	position:absolute;
+	top:75px;
+	left:0px;
+	width:40px;
+	height:40px;
+	display:block;
+	z-index:101;
+}
+
+.gallery #slides .next {
+	left:260px;
+}
+
+.gallery #slides .pagination {
+	display: none;
+}
+
+
+
+
+/*
+	Slideshow Dos
+*/
+
+.gallery #slidesDos {
+	position:absolute;
+	z-index:100;
+	display: none
+}
+
+
+.gallery .slides_container {
+	width:300px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+
+.gallery .slides_container img {
+	width:300px;
+}
+
+
+.gallery .slides_container div.slide {
+	width:300px;
+	height:200px;
+	display:block;
+}
+
+.gallery #slidesDos .next,#slidesDos .prev {
+	position:absolute;
+	top:75px;
+	left:0px;
+	width:40px;
+	height:40px;
+	display:block;
+	z-index:101;
+}
+
+.gallery #slidesDos .next {
+	left:260px;
+}
+
+.gallery #slidesDos .pagination {
+	display: none;
+}
+
+
+/*
+	Slideshow Tres
+*/
+
+.gallery #slidesTres {
+	position:absolute;
+	z-index:100;
+	display: none;
+}
+
+
+.gallery .slides_container {
+	width:300px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+
+.gallery .slides_container img {
+	width:300px;
+}
+
+
+.gallery .slides_container div.slide {
+	width:300px;
+	height:200px;
+	display:block;
+}
+
+.gallery #slidesTres .next,#slidesTres .prev {
+	position:absolute;
+	top:75px;
+	left:0px;
+	width:40px;
+	height:40px;
+	display:block;
+	z-index:101;
+}
+
+.gallery #slidesTres .next {
+	left:260px;
+}
+
+.gallery #slidesTres .pagination {
+	display: none;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<section class="gallery">
+	<ul>
+		<li class="slidesUnoAct selectedGallery">
+			<div class="btnUno" alt="slides"></div>
+		</li>
+
+		<li class="slidesDosAct">
+			<div class="btnDos"></div>
+		</li>
+
+		<li class="slidesTresAct">
+			<div class="btnTres"></div>
+		</li>
+
+		
+	</ul>
+ <!---------------------- AQUI COMIENZA EL SLIDER ---------------->   
+<div id="slides" class="eliSlide">
+	<div class="slides_container">
+		<div class="slide">
+			<img src="images/imgslider.png"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+		</div>
+
+		<div class="slide">
+			<img src="images/imgslider.png"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+		</div>
+
+		<div class="slide">
+			<img src="images/imgslider.png"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+		</div>
+	</div>
+<!---------------------- ESTAS SON LA FLECHAS ---------------->   
+	<a href="#" class="prev"><img src="images/arrowleft.png" alt="Arrow Prev"></a>
+	<a href="#" class="next"><img src="images/arrowright.png" alt="Arrow Next"></a>
+</div>
+
+<div id="slidesDos" class="eliSlide">
+	<div class="slides_container">
+		<div class="slide">
+			<img src="http://www.meganoticias.cl/files/img/2011/10/25/2011_10_25_1103_1319551380_original.jpg"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+		</div>
+
+		<div class="slide">
+			<img src="http://www.meganoticias.cl/files/img/2011/10/25/2011_10_25_1103_1319551380_original.jpg"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+		</div>
+
+		<div class="slide">
+			<img src="http://www.meganoticias.cl/files/img/2011/10/25/2011_10_25_1103_1319551380_original.jpg"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+		</div>
+	</div>
+<!---------------------- ESTAS SON LA FLECHAS ---------------->   
+	<a href="#" class="prev"><img src="images/arrowleft.png" alt="Arrow Prev"></a>
+	<a href="#" class="next"><img src="images/arrowright.png" alt="Arrow Next"></a>
+</div>
+
+<div id="slidesTres" class="eliSlide">
+	<div class="slides_container">
+		<div class="slide">
+			<img src="http://media.radiobiobio.cl/wp-content/uploads/2011/03/conaf1-630x461.jpg"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+		</div>
+
+		<div class="slide">
+			<img src="http://media.radiobiobio.cl/wp-content/uploads/2011/03/conaf1-630x461.jpg"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+		</div>
+
+		<div class="slide">
+			<img src="http://media.radiobiobio.cl/wp-content/uploads/2011/03/conaf1-630x461.jpg"><!--ESTA IMG ES LA Q TIENES QUE CAMBIAR-->
+		</div>
+	</div>
+<!---------------------- ESTAS SON LA FLECHAS ---------------->   
+	<a href="#" class="prev"><img src="images/arrowleft.png" alt="Arrow Prev"></a>
+	<a href="#" class="next"><img src="images/arrowright.png" alt="Arrow Next"></a>
+</div>
+
+
+</section>
+
+</body>
+</html>
